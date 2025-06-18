@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/base.css">
+  <link rel="stylesheet" href="static/hero.css">
+  <link rel="stylesheet" href="static/projects.css">
+  <link rel="stylesheet" href="static/contact.css">
+  <title>Ronald Sardiñas González - Portfolio</title>
+</head>
+<body>
+  <header id="header">
+    <h1 id="title">saronzdev</h1>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <img class="mobile-menu" id="mobileMenu" src="assets/menu.svg" alt="menu icon">
+  </header>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="mobile-sidebar-header">
+      <h2 class="mobile-sidebar-title">Menú</h2>
+      <img class="mobile-close-btn" id="mobileCloseBtn" src="assets/close.svg" alt="close icon">
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#home" class="mobile-nav-link">Inicio</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-sidebar-contact">
+      <a href="https://x.com/saronzdev" target="_blank" rel="noopener" aria-label="X (Twitter)">
+        <img src="assets/x.svg" alt="X (Twitter)">
+      </a>
+      <a href="https://github.com/saronzdev" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="assets/github.svg" alt="GitHub">
+      </a>
+      <a href="mailto:ronaldsrd@protonmail.com" aria-label="Correo">
+        <img src="assets/mail.svg" alt="Correo">
+      </a>
+      <a href="https://t.me/saronzdev" target="_blank" rel="noopener" aria-label="Telegram">
+        <img src="assets/telegram.svg" alt="Telegram">
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Ronald Sardiñas González</h2>
+        <h3>Desarrollador Web & Estudiante de Ingeniería Informática</h3>
+        <!-- Imagen solo móvil -->
+        <div class="hero-image mobile-only">
+          <img src="assets/hero.png" alt="Desarrollador trabajando en su escritorio con múltiples pantallas" height="400" width="400">
+        </div>
+        <p class="linus-quote">"Talk is cheap. Show me the code."<br><span>— Linus Torvalds</span></p>
+        <div class="hero-buttons">
+          <a class="btn-primary" href="#projects">Ver mis proyectos</a>
+          <a class="btn-secondary">Contactar</a>
+        </div>
+      </div>
+      <!-- Imagen solo desktop -->
+      <div class="hero-image desktop-only">
+        <img src="assets/hero.png" alt="Desarrollador trabajando en su escritorio con múltiples pantallas" height="400" width="400">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Proyectos -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <div id="proj-portfolio" class="project-card">
+          <h3>Portfolio</h3>
+          <p>Mi sitio web personal, donde muestro mis proyectos.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div id="proj-jewelry" class="project-card">
+          <h3>Frank Jewerly</h3>
+          <p>Sitio web para una joyería, donde se muestra su catálogo.</p>
+          <div class="project-tags">
+            <span class="tag">Preact</span>
+            <span class="tag">Astro</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Express</span>
+          </div>
+        </div>
+        <div id="proj-blog" class="project-card">
+          <h3>Blog Técnico</h3>
+          <p>Blog sobre desarrollo web, hacking y tecnología.</p>
+          <div class="project-tags">
+            <span class="tag">Astro</span>
+            <span class="tag">Markdown</span>
+            <span class="tag">Turso</span>
+            <span class="tag">Express</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Puedes encontrarme en:</p>
+      <div class="contact-links">
+        <a href="https://x.com/saronzdev" class="contact-link" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <img src="assets/x.svg" alt="X (Twitter)" />
+          X (Twitter)
+        </a>
+        <a href="https://github.com/saronzdev" class="contact-link" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/github.svg" alt="GitHub" />
+          GitHub
+        </a>
+        <a href="mailto:ronaldsrd@protonmail.com" class="contact-link" aria-label="Correo">
+          <img src="assets/mail.svg" alt="Correo" />
+          Correo
+        </a>
+        <a href="https://t.me/saronzdev" class="contact-link" target="_blank" rel="noopener" aria-label="Telegram">
+          <img src="assets/telegram.svg" alt="Telegram" />
+          Telegram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 saronzdev. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="static/script.js"></script>
+</body>
+</html>

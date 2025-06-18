@@ -1,0 +1,178 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--bg-hero);
+  padding-top: 80px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.hero-text h3 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  letter-spacing: 0.3px;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font: 600 1rem/1 inherit;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--gradient);
+  color: var(--bg-white);
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(138, 43, 226, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--bg-white);
+  transform: translateY(-3px);
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 400px;
+  min-width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: var(--shadow-hover);
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+/* Puedes ponerlo en base.css o hero.css */
+.linus-quote {
+  margin-top: 32px;
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.linus-quote span {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--primary-dark);
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 20px;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    gap: 30px;
+  }
+
+  .hero-image img {
+    max-width: 250px;
+  }
+
+  .hero-text {
+    margin: 0 5px;
+    max-width: 100%;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .linus-quote {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
