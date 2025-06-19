@@ -6,7 +6,7 @@
   max-width: 100vw;
   overflow-x: hidden;
   padding: 60px 0;
-  background: var(--bg-light);
+  background: var(--bg-white);
 }
 
 .container {
@@ -54,9 +54,10 @@
 .project-card p {
   color: var(--bg-light);
   font-size: 1.05rem;
+  margin-bottom: 15px;
 }
 
-.project-tags {
+.tags {
   margin-top: 18px;
   display: flex;
   flex-wrap: wrap;

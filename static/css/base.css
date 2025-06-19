@@ -1,0 +1,26 @@
+@import './reset.css';
+@import './variables.css';
+
+/* Layout principal */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+/* SEO y Meta */
+meta[name="description"] {
+  content: "Portfolio de Ronald Sardiñas González - Desarrollador Web y Estudiante de Ingeniería Informática";
+}
+
+/* Accesibilidad */
+[role="banner"] {
+  padding: var(--spacing);
+}
+
+[role="navigation"] {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
